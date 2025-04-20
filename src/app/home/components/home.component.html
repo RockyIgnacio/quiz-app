@@ -1,0 +1,16 @@
+<div class="page-home-container" *ngIf="exam">
+    <div class="header">
+        <h1>{{exam.exam_name}}</h1>
+        <p>{{exam.heading}}</p>
+    </div>
+    <div class="activities-container">
+        <div *ngFor="let activity of activities"
+            class="activity-btn">
+            <p (click)="proceedToExamination(activity.activity_id)"
+                class="activity-name">
+                {{activity.activity_name}}
+            </p>
+        </div>
+    </div>
+
+</div>

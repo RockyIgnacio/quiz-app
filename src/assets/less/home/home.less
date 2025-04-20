@@ -1,0 +1,44 @@
+@import "../variables.less";
+@import "../base.less";
+
+.page-home-container {
+    text-align: center;
+    color: @primaryTextColor;
+    padding: 24px;
+
+    .header {
+        h1 {
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin: 0;
+            font-style: italic;
+        }
+    }
+
+    .activities-container {
+        margin: 15px 0;
+
+        .activity-btn {
+            cursor: pointer;
+
+            &:hover {
+                background-color: @primaryBGColor;
+            }
+        }
+
+        .activity-name {
+            margin: 0;
+            padding: 10px;
+        }
+    }
+}
+
+
+@media (min-width: 768px) {
+    .page-home-container {
+        width: 600px;
+        margin: auto;
+    }
+}

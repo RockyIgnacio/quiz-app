@@ -1,0 +1,38 @@
+body {
+  font-family: Arial;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.page-question-container .question {
+  margin-bottom: 20px;
+}
+.page-question-container .question span {
+  font-weight: 700;
+}
+.page-question-container ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  text-align: center;
+  padding: 0;
+}
+.page-question-container li {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+.page-question-container li:hover {
+  background-color: #DAEDFF;
+}
+@media (min-width: 768px) {
+  .page-question-container {
+    width: 600px;
+    margin: auto;
+  }
+}

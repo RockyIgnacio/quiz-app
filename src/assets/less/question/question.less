@@ -1,0 +1,37 @@
+@import "../variables.less";
+@import "../base.less";
+
+.page-question-container {
+    .question {
+        margin-bottom: 20px;
+        
+        span {
+            font-weight: 700;
+        }
+    }
+
+    ul {
+        display: flex;
+        list-style: none;
+        justify-content: space-around;
+        text-align: center;
+        padding: 0;
+    }
+
+    li {
+        width: 100%;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: @primaryBGColor;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .page-question-container {
+        width: 600px;
+        margin: auto;
+    }
+}

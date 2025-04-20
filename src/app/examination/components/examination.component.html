@@ -1,0 +1,22 @@
+<div class="page-examination-container" *ngIf="question_rounds">
+    <p *ngIf="show_question" class="round-number">ROUND {{active_round.order}}</p>
+    <ng-container *ngIf="show_question">
+        <question 
+            [active_question]="active_question"
+            (onAnswer)="onAnswer($event)">
+        </question>
+    </ng-container>
+    <ng-container *ngIf="show_next_round_btn">
+        <div class="next-round-btn-container">
+            <button class="next-round-btn"
+                (click)="activateNextRound()">Take the next round.</button>
+        </div>
+    </ng-container>
+    <ng-container *ngIf="show_results">
+        <p class="activity-number">ACTIVITY {{activity_id}}</p>
+        <result
+            [activity_number]="activity_id"
+            [round_number]="active_round.order">
+        </result>
+    </ng-container>
+</div>

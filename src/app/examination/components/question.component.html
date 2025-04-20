@@ -1,0 +1,10 @@
+<div class="page-question-container">
+    <h1>Q{{active_question.order}}.</h1>
+    <p class="question" [innerHTML]="parseQuestion(active_question.stimulus)"></p>
+    <ul>
+        <li *ngFor="let choice of active_question.answers"
+            (click)="selectAnswer(choice)">
+            {{choice.answer}}
+        </li>
+    </ul>
+</div>

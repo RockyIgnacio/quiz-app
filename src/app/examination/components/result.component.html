@@ -1,0 +1,15 @@
+<div class="page-result-container">
+    <h1>Results</h1>
+    <div class="results-container">
+        <div class="results" *ngFor="let round of results; let i = index">
+            <p class="round-number" *ngIf="results.length > 1">Round {{i+1}}</p>
+            <ul>
+                <li *ngFor="let question of round">
+                    <span class="question-number">Q{{question.question_number}}</span>
+                    <span class="answer">{{question.is_correct == "1" ? 'CORRECT' : 'INCORRECT'}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="home-btn" (click)="backToHomePage()"><span>Home</span></div>
+</div>

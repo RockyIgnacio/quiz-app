@@ -1,0 +1,40 @@
+body {
+  font-family: Arial;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.page-examination-container {
+  padding: 24px;
+  color: #017CF3;
+}
+.page-examination-container .activity-number {
+  text-align: center;
+  font-weight: 700;
+}
+.page-examination-container .round-number {
+  font-weight: 700;
+}
+.page-examination-container .next-round-btn-container {
+  text-align: center;
+}
+.page-examination-container .next-round-btn-container .next-round-btn {
+  padding: 10px;
+  background-color: #017CF3;
+  border: 1px solid #017CF3;
+  color: #FFFFFF;
+  width: 200px;
+  margin-top: 80px;
+  cursor: pointer;
+}
+@media (min-width: 768px) {
+  .page-examination-container {
+    width: 600px;
+    margin: auto;
+  }
+}

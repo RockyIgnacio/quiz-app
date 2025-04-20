@@ -1,0 +1,42 @@
+body {
+  font-family: Arial;
+}
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.page-home-container {
+  text-align: center;
+  color: #017CF3;
+  padding: 24px;
+}
+.page-home-container .header h1 {
+  margin-bottom: 10px;
+}
+.page-home-container .header p {
+  margin: 0;
+  font-style: italic;
+}
+.page-home-container .activities-container {
+  margin: 15px 0;
+}
+.page-home-container .activities-container .activity-btn {
+  cursor: pointer;
+}
+.page-home-container .activities-container .activity-btn:hover {
+  background-color: #DAEDFF;
+}
+.page-home-container .activities-container .activity-name {
+  margin: 0;
+  padding: 10px;
+}
+@media (min-width: 768px) {
+  .page-home-container {
+    width: 600px;
+    margin: auto;
+  }
+}

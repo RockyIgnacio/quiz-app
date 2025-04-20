@@ -1,0 +1,37 @@
+@import "../variables.less";
+@import "../base.less";
+
+.page-examination-container {
+    padding: 24px;
+    color: @primaryTextColor;
+
+    .activity-number {
+        text-align: center;
+        font-weight: 700;
+    }
+
+    .round-number {
+        font-weight: 700;
+    }
+
+    .next-round-btn-container {
+        text-align: center;
+
+        .next-round-btn {
+            padding: 10px;
+            background-color: @primaryTextColor;
+            border: 1px solid @primaryTextColor;
+            color: @secondaryTextColor;
+            width: 200px;
+            margin-top: 80px;
+            cursor: pointer;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .page-examination-container {
+        width: 600px;
+        margin: auto;
+    }
+}

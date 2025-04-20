@@ -1,0 +1,44 @@
+@import "../variables.less";
+@import "../base.less";
+
+.page-result-container {
+    text-align: center;
+    padding: 24px;
+
+    li {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .round-number,
+    .results li {
+        padding: 10px;
+        border: 1px solid #b5dafd;
+        background-color: #f7fbff;
+    }
+
+    .results:only-child {
+        border-top: 1px solid #b5dafd;
+    }
+
+    .results:last-child {
+        border-bottom: 1px solid #b5dafd;
+    }
+
+    .results li:last-child {
+        border-bottom: none;
+    }
+
+    .results li:last-child,
+    .results li:first-child {
+        border-top: none;
+    }
+
+    .home-btn {
+        margin-top: 20px;
+
+        span {
+            cursor: pointer;
+        }
+    }
+}
