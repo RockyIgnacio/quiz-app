@@ -17,7 +17,7 @@ export class ExaminationService {
         // const quiz_api_url = environment.quiz_api_url + '/get-activity-questions/' + activity_id;
         // return this.Http.get(quiz_api_url);
 
-        let returnData = {};
+        let returnData = null;
         switch (activity_id) {
             case 1:
                 returnData = this.activityOne

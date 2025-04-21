@@ -40,14 +40,21 @@ export class ExaminationComponent {
 
     ngOnInit() {
         this.activity_id = parseInt(this.route.snapshot.paramMap.get('activity_id') ?? '') || 0;
-        this.ExaminationService.getActivityQuestionsById(this.activity_id).subscribe((response: any) => {
-            if (response.success) {
-                this.question_rounds = response.data;
-                this.active_round = this.question_rounds[this.round_step];
-                this.questions = this.active_round['questions'];
-                this.active_question = this.questions[this.question_step];
-            }
-        });
+        // this.ExaminationService.getActivityQuestionsById(this.activity_id).subscribe((response: any) => {
+        //     if (response.success) {
+        //         this.question_rounds = response.data;
+        //         this.active_round = this.question_rounds[this.round_step];
+        //         this.questions = this.active_round['questions'];
+        //         this.active_question = this.questions[this.question_step];
+        //     }
+        // });
+        const response = this.ExaminationService.getActivityQuestionsById(this.activity_id);
+        if (response) {
+            this.question_rounds = response.data;
+            this.active_round = this.question_rounds[this.round_step];
+            this.questions = this.active_round['questions'];
+            this.active_question = this.questions[this.question_step];
+        }
     }
 
     public onAnswer(answer: any) {
