@@ -1,3 +1,4 @@
 export const environment = {
-    quiz_api_url: 'https://local.quiz-api.com:889'
+    production: false,
+    quiz_api_url: 'http://www.quiz-api.42web.io'
 };
