@@ -5,7 +5,6 @@ export interface IExamInterface {
 }
 
 export interface IActivity {
-    exam_id: number,
     activity_id: number,
     activity_name: string,
     order: number,

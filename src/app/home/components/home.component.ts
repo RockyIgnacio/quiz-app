@@ -26,12 +26,16 @@ export class HomeComponent {
         ) { }
 
     ngOnInit() {
-        this.HomeService.getActiveExam().subscribe((response: any) => {
-            if (response.success) {
-                this.exam = response.data[0];
-                this.activities = response.data[0]['activities'];
-            }
-        });
+        // this.HomeService.getActiveExam().subscribe((response: any) => {
+        //     if (response.success) {
+        //         this.exam = response.data[0];
+        //         this.activities = response.data[0]['activities'];
+        //     }
+        // });
+
+        const response = this.HomeService.getActiveExam();
+        this.exam = response.data[0];
+        this.activities = response.data[0]['activities'];
     }
 
     proceedToExamination(activity_id: number) {
