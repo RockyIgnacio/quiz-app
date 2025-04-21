@@ -1,0 +1,8 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/:match*",
+        "destination": "http://www.quiz-api.42web.io/:match*"
+      }
+    ]
+}
